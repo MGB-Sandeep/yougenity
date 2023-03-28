@@ -1,0 +1,360 @@
+/***** profile tabs ******/
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+.outter-wrap {
+    padding: 3.5rem 2rem;
+}
+.card-body {
+    padding: 1rem 0rem;
+}
+}
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    .profile-image img {
+        width: 170px;
+    }
+    .profile-name {
+        font-size: 30px;
+    }
+    .profile-exp p {
+        font-size: 15px;
+    }
+    .genicode {
+        font-size: 18px;
+    }
+    .social-icon img {
+        width: 22px;
+    }
+    .brand {
+        font-size: 34px;
+    }
+    .main-heading span {
+        font-size: 22px;
+    }
+    .outter-wrap {
+        padding: 3.5rem 4rem;
+    }
+    #login .outter-wrap {
+        padding: 3.5rem 12rem !important;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .outter-wrap {
+        padding: 30px 5px;
+    }
+    .profile-name {
+        font-size: 24px;
+    }
+    .profile-name img {
+        width: 16px;
+    }
+    .profile-exp p {
+        font-size: 15px;
+    }
+    .picture-gallery .row img, .video-gellery .row img {
+        width: 100%;
+    }
+    .social-icon img {
+        width: 24px;
+    }
+    .social-icon li.list-group-item {
+        padding: 10px;
+    }
+    .brand-info {
+        text-align: left;
+        display: block !important;
+    }
+    .brand-info span{
+        visibility: hidden !important;
+    }
+    .reports .row > div {
+        width: 92%;
+    }
+    .reports .row {
+        justify-content: center;
+    }
+    .genicode {
+        font-size: 14px;
+    }
+    .modal-body{
+    padding: 3rem 2rem 2rem;
+}
+.modal-footer {
+    padding: 0rem 2rem 2rem;
+}
+.modal-dialog {
+    max-width: 90%;
+}
+.user-image img {
+    width: 150px;
+}
+}
+/***** profile mobile ******/
+@media screen and (max-width: 767px) {
+    /***** sidebar ******/
+    .outter-wrap {
+        padding: 20px 0;
+    }
+    .profile-image .approve {
+        width: 25px;
+    }
+    .genicode {
+        font-size: 18px;
+        text-align: center;
+    }
+    #sidebar .outter-wrap {
+        padding: 15px 12px;
+    }
+    .profile-image img {
+        width: 100%;
+    }
+    .profile-name {
+        font-size: 20px;
+    }
+    .profile-exp p {
+        font-size: 12px;
+    }
+    .profile-exp img {
+        width: 16px;
+    }
+    #sidebar {
+        bottom: unset;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    #main-content {
+        position: relative;
+        top: 260px;
+    }
+    #sidebar .edit {
+        top: 10px;
+    }
+    .approve {
+        width: 15px;
+    }
+/***** main content ******/
+    .main-heading span {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    .drag-file-area h3 {
+        font-size: 14px;
+        margin: 8px 0 0;
+    }
+    .bio .card-text {
+        font-size: 14px;
+    }
+    .bio .card-body {
+        padding: 20px;
+    }
+
+    .reports .card-body {
+        padding: 15px 0;
+    }
+    .reports p {
+        margin-right: 0;
+        font-size: 13px;
+    }
+    .reports .image img {
+        border-radius: 17px;
+        background-color: #fff;
+        width: 124px;
+        min-width: unset;
+    }
+    .modal-body {
+    padding: 3rem 1rem 2rem;
+    }
+    .modal-footer {
+        padding: 0rem 1rem 2rem;
+    }
+    .modal-dialog {
+        max-width: 100%;
+    }
+    .user-image img {
+        width: 100px;
+    }
+    .user-image i {
+        right: 12px;
+        font-size: 20px;
+    }
+    .social-link {
+        margin-top: 0 !important;
+    }
+}
+
+/***** login mobile ******/
+@media screen and (min-width: 1025px) and (max-width: 1700px) {
+    #login .outter-wrap {
+        padding: 3.5rem 5rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #main-content {
+        min-height: unset;
+    }
+    #main-content label {
+        font-size: 16px;
+    }
+    #login .btn {
+        line-height: 2;
+    }
+    .forgot-password a {
+        font-size: 16px;
+    }
+    .signup {
+        font-size: 18px;
+    }
+    #login .form-control {
+        padding: 0.575rem 0.75rem;
+    }
+    #login #main-content {
+        position: relative;
+        top: 140px;
+        width: 100%;
+    }
+    #login .outter-wrap {
+        padding: 2rem 8rem;
+    }
+    #login .brand {
+        font-size: 40px;
+        letter-spacing: 0;
+    }
+    .log-heading {
+        font-size: 36px;
+    }
+    #login #sidebar {
+        width: 100%;
+        padding: 40px 0;
+        bottom: unset;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    .form-check-input {
+        width: 1em;
+    }
+    .check-text {
+        font-size: 14px;
+    }
+    .dropdown-menu {
+        padding: 2rem;
+        height: auto;
+    }
+    .dropdown-menu img {
+    width: 80px;
+    }
+    .edit-btn .dropdown-menu {
+        top: 90px !important;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .form-check-input {
+        width: 1.2em;
+    }
+}
+@media screen and (max-width: 767px) {
+    .log-heading {
+        font-size: 30px;
+    }
+    .form-check-input {
+        width: 1.6em;
+    }
+    #login .outter-wrap {
+        padding: 1rem 2rem;
+    }
+    #main-content label {
+        font-size: 14px;
+    }
+    #login .brand {
+        font-size: 32px;
+        letter-spacing: 0;
+    }
+    .check-text {
+        font-size: 12px;
+    }
+    .forgot-password a {
+        font-size: 13px;
+    }
+    .signup {
+        font-size: 14px;
+    }
+    label.form-label {
+        font-size: 14px;
+    }
+    .drag-file-area {
+        padding: 15px 15px;
+    }
+    .drag-file-area label {
+        font-size: 14px;
+    }
+    .modal button {
+        padding: 6px 20px;
+    }
+    .link button {
+        padding: 10px;
+    }
+    #addreport .modal-content {
+        min-height: 97vh;
+    }
+    .report-list {
+        padding: 15px 15px;
+        border-radius: 20px;
+    }
+    .dropdown-menu .report-title {
+        padding-left: 0 !important;
+    }
+.report-details img {
+    width: 60px;
+    border-radius: 20px;
+}
+.edit-btn a span {
+    display: none;
+}
+.qrcode {
+    padding: 46px 20px;
+}
+.file-info {
+    padding-bottom: 12px;
+    display: inline-block;
+}
+}
+@media screen and (max-width: 567px) {
+.profile-exp p {
+    font-size: 12px;
+}
+#sidebar .edit {
+    top: 8px;
+    right:8px;
+}
+.picture-gallery .row img, .video-gellery .row img {
+    width: 100%;
+}
+}
+@media screen and (max-width: 413px) {
+    .profile-exp p {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 374px) {
+#main-content {
+    top: 236px;
+}
+.social-icon img {
+    width: 20px;
+}
+.genicode {
+    font-size: 15px;
+}
+#sidebar {
+    padding: 0;
+}
+.profile-exp p {
+    font-size: 9px;
+}
+#main-content {
+    top: 240px;
+}
+}
+@media screen and (max-width: 359px) {
+    #main-content {
+        top: 215px;
+    }
+}

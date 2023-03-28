@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+  <g id="Check-mark" transform="translate(-115 -27.111)">
+    <g id="Ellipse_31" data-name="Ellipse 31" transform="translate(115 27.111)" fill="none" stroke="#3aff61" stroke-width="2">
+      <circle cx="13.5" cy="13.5" r="13.5" stroke="none"/>
+      <circle cx="13.5" cy="13.5" r="12.5" fill="none"/>
+    </g>
+    <path id="_3671728_checkmark_icon" data-name="3671728_checkmark_icon" d="M0,8.441l1.36-1.36,3.4,3.4L12.242,3,13.6,4.36,4.761,13.2Z" transform="translate(122.109 32.099)" fill="#3aff61"/>
+  </g>
+</svg>

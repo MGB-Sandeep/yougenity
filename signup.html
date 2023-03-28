@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Title -->
+    <title>Yougenity</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="./assets/dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="./assets/dist/css/Custom.css" rel="stylesheet">
+    <link href="./assets/dist/css/responsive.css" rel="stylesheet">
+
+    <!-- Font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+  </head>
+  <body id="login">
+    <div class="container-fluid">
+      <div class="row">
+        <div id="sidebar" class="col-lg-5 ">
+            <div class="text-center justify-content-center d-lg-flex align-items-lg-center h-100">
+                <a href="index.html" class="brand">Yougenity</a>
+            </div>
+        </div>
+        <div id="main-content" class="col-lg-7 ms-sm-auto d-lg-flex align-items-lg-center">
+          <div class="outter-wrap w-100">
+            <h2 class="log-heading pb-4 mb-lg-4">Sign Up</h2>
+            <form action="profile.html">
+              <div class="mb-3 mt-3">
+                <label class="pb-2" for="name">Full Name</label>
+                <input type="text" class="form-control" id="name"  name="name">
+              </div>
+              <div class="mb-3 mt-3">
+                <label class="pb-2" for="number">Mobile Number</label>
+                <input type="text" class="form-control" id="number"  name="number">
+              </div>
+                <div class="mb-3 mt-3">
+                  <label class="pb-2" for="email">Email</label>
+                  <input type="email" class="form-control" id="email"  name="email">
+                </div>
+                <div class="mb-4 mb-lg-5">
+                  <label class="pb-2" for="pwd">Password</label>
+                  <input type="password" class="form-control" id="pwd"  name="pswd">
+                </div>
+                <div class="check-condition d-flex mb-4">
+                  <input class="form-check-input me-3" type="checkbox" name="remember">
+                  <div class="check-text">
+                    <span>By creating account you agree to our </span><a href="#">Privacy Policy</a>, <a href="#">Terms of Service </a><span> and </span><a href="#">Notification Setting</a>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Create Account</button>
+
+                <div class="signup text-center mt-lg-5 mt-4">
+                  <span>Already have an account? </span> <a href="login.html">Log In</a>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="../assets/dist/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
