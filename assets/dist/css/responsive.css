@@ -247,6 +247,7 @@
         position: relative;
         bottom: 0;
         top: 3rem;
+        padding-bottom: 40px;
     }
     #sidebar {
         overflow-x: scroll;
