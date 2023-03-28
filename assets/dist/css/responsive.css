@@ -329,7 +329,10 @@
     font-size: 15px;
     letter-spacing: 1px;
 }
-
+.up-image {
+    width: 150px !important;
+    margin: 0 auto;
+}
 }
 @media screen and (max-width: 567px) {
 .profile-exp p {
