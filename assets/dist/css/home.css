@@ -8,6 +8,8 @@ a{ text-decoration: none;}
 p {
   font-size: 20px;
 }
+.opacity-25{opacity: 0.25;}
+.opacity-40{opacity: 0.40;}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -28,6 +30,10 @@ header {
     list-style: none;
     align-items: center;
   }
+  #header.header-scrolled {
+    background: rgb(42 45 116 / 86%);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
   
   .navbar li {
     position: relative;
@@ -379,6 +385,59 @@ section {
   background-size: cover;
   background-position: center;
 }
+.pr-image {
+  display: flex;
+  flex-direction: column;
+}
+.outter-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pr-image img {
+  padding: 15px;
+}
+.box5 {
+  margin: 0 -10px;
+}
+.box4, .box6 {
+  width: 37%;
+}
+
+
+.unique-genicode {
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 50px;
+    margin-top: 100px;
+  position: relative;
+}
+.profile-url a {
+  position: absolute;
+}
+.profile-url a:first-child {
+  top: -110px;
+  left: -110px;
+  transform: rotate(-30deg);
+}
+.profile-url a img {
+  width: 200px;
+}
+.profile-url a:first-child {
+  top: -40px;
+    left: -56px;
+    transform: rotate(-20deg);
+}
+.profile-url a:nth-child(2) {
+  top: 80%;
+  left: 40px;
+}
+.profile-url a:nth-child(3) {
+  top: 40px;
+  right: -50px;
+  transform: rotate(16deg);
+}
 
   
 
@@ -390,7 +449,7 @@ section {
   background: #2A2D74;
   color: #fff;
   text-align: center;
-  padding: 200px 0 100px;
+  padding: 200px 0 60px;
 }
 #main-content.about{
   padding: 100px 0 ;
@@ -399,6 +458,46 @@ img.ab-img {
   width: 500px;
   float: right;
 }
+.team-content h4 {
+  color: #2a2d74;
+  display: inline-block;
+    position: relative;
+    margin-bottom: 30px;
+}
+.team-content h4:after {
+  content: '';
+  width: 112%;
+  height: 1px;
+  position: absolute;
+  display: block;
+  background: #2a2d74;
+  margin-top: 5px;
+}
+
+
+/*--------------------------------------------------------------
+# How it works
+--------------------------------------------------------------*/
+
+.step-count {
+  font-size: 100px;
+  font-weight: 600;
+  border: 1px solid #2a2d74;
+  display: inline-block;
+  border-radius: 100%;
+  width: 160px;
+  height: 160px;
+  text-align: center;
+  color: #2a2d74;
+}
+.step-content p {
+  width: 60%;
+  font-size: 26px;
+}
+.howitworks {
+  padding: 100px 0;
+}
+
 
 /*--------------------------------------------------------------
 # Footer
@@ -409,9 +508,45 @@ footer {
   padding: 60px 0;
 }
 .footer-nav {
-  color: #fff;
   padding-top: 30px;
+}
+.footer-nav a {
+  color: #fff;
 }
 .footer-nav ul li {
   padding: 0 15px;
+}
+
+/*--------------------------------------------------------------
+# Chat bot
+--------------------------------------------------------------*/
+
+.chat_close_icon {
+  cursor:pointer;
+   color: #fff;
+   font-size:16px;
+   position: absolute;
+   right: 12px;
+   z-index: 9;
+}
+.chat_on {
+   position: fixed;
+   z-index: 10;
+   width: 45px;
+   height: 45px;
+   right: 15px;
+   bottom:20px;
+   background-color: #8a57cf;
+   color: #fff;
+   border-radius: 50%;
+   text-align: center;
+   padding: 9px;
+   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+   cursor: pointer;
+   display: block;
+}
+.chat_on_icon{
+   color:#fff;
+   font-size:25px;
+   text-align:center;
 }
