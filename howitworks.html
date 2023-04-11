@@ -29,7 +29,7 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <a class="d-block" href="home.html"><img width="260" src="/assets/images/home/yougenity-logo-white.png" /></a>
+        <a class="d-block" href="home.html"><img width="260" src="assets/images/home/yougenity-logo-white.png" /></a>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -38,7 +38,7 @@
           <li><a class="nav-link active" href="howitworks.html">How it works</a></li>
           <li><a class="getstarted " href="login.html">Login</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i class="bi bi-list mobile-nav-toggle white"></i>
       </nav><!-- .navbar -->
 
     </div>
@@ -60,12 +60,12 @@
 
   </section><!-- End Hero -->
 
-  <div id="main-content" class="howitworks">
+  <div id="main-content-web" class="howitworks">
 
       <div class="container">
         <div class="row">
           <div class="col-lg-6 justify-content-center align-items-center d-flex">
-            <div class="step-count">
+            <div class="step-count step1">
               01
             </div>
           </div>
@@ -75,7 +75,8 @@
               <p>Upload genomic data from any genetic testing provider of your choice.</p>
             </div>
           </div>
-
+        </div>
+        <div class="row step2-outter">
           <div class="col-lg-6 justify-content-center align-items-center d-flex">
             <div class="step-content text-center justify-content-center align-items-center d-flex flex-column">
               <lottie-player src="https://lottie.host/a705eb46-eefb-4f42-bcf9-97fe1b809282/fbpnlvQoGW.json"  background="transparent"  speed="1" style="width: 400px; height: 400px;"  loop  autoplay></lottie-player>
@@ -83,13 +84,14 @@
             </div>
           </div>
           <div class="col-lg-6 justify-content-center align-items-center d-flex">
-            <div class="step-count">
+            <div class="step-count step2">
               02
             </div>
           </div>
-
+        </div>
+        <div class="row">
           <div class="col-lg-6 justify-content-center align-items-center d-flex">
-            <div class="step-count">
+            <div class="step-count step3">
               03
             </div>
           </div>
@@ -100,6 +102,8 @@
             </div>
           </div>
         </div>
+          
+        </div>
       </div>
 
   </div>
@@ -109,7 +113,7 @@
       <div class="row">
         <div class="col-12">
           <div class="logo">
-            <a class="d-block" href="home.html"><img width="300" src="/assets/images/home/yougenity-logo-white.png" /></a>
+            <a class="d-block" href="home.html"><img width="300" src="assets/images/home/yougenity-logo-white.png" /></a>
           </div>
           <div class="footer-nav">
             <ul class="list-unstyled mb-0">
@@ -124,11 +128,51 @@
     </div>
   </footer>
 
+
+<!-- Chat bot -->
+
+<div class="chat-boxoutter">
+  <div id="chat-box">
+    <div class="chat-box-header">
+      <span>Genibot</span>
+      <a class="cancel-chat"><i class="bi bi-x-lg"></i></a>
+    </div>
+    <div class="chat-box-body">
+      <div class="chat-box-overlay">   
+      </div>
+      <div class="chat-logs">
+        <div class="bot messages">
+          <div class="message">
+            Welcome to YOUGENITY
+          </div>
+          <div class="message last">
+            Hi,How may I help you?
+          </div>
+        </div>
+        <div class="user messages">
+          <div class="message last">
+            I need help with something
+           </div>
+        </div>
+      </div><!--chat-log -->
+    </div>
+    <div class="chat-input">      
+      <form>
+        <input type="text" id="chat-input" placeholder="Type your query here..."/>
+      </form>      
+    </div>
+  </div>
+<a class="chat_on">
+  <img src="assets/images/home/bot-icon.png" alt="">
+</a>
+</div>
+
+
   <script src="assets/dist/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
     <!-- Main JS File -->
-    <script src="/assets/dist/js/main.js"></script>
+    <script src="assets/dist/js/main.js"></script>
 
   </body>
 </html>

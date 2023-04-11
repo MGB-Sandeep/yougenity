@@ -49,14 +49,14 @@
               </div>
               <div class="genicode mt-3 mb-1 mt-md-5"><span>HS,1,23331123133313113232333,1</span></div>
               <ul class="social-icon list-group-horizontal list-group mt-lg-3 justify-content-evenly justify-content-md-start flex-wrap">
-                <li class="list-group-item ps-lg-0"><a href="https://www.instagram.com/" target="_blank"><img src="assets/images/sidebar/social-icon/instagram.svg" alt="instagram"></a></li>
-                <li class="list-group-item"><a href="https://www.youtube.com/" target="_blank"><img src="assets/images/sidebar/social-icon/youtube.svg" alt="youtube"></a></li>
-                <li class="list-group-item"><a href="https://twitter.com/i/flow/login" target="_blank"><img src="assets/images/sidebar/social-icon/twitter.svg" alt="twitter"></a></li>
-                <li class="list-group-item"><a href="https://www.tiktok.com/login" target="_blank"><img src="assets/images/sidebar/social-icon/tiktok.svg" alt="tiktok"></a></li>
-                <li class="list-group-item"><a href="" data-bs-toggle="modal" data-bs-target="#sharegenecode"><img src="assets/images/sidebar/social-icon/qr-code.svg" alt="genicode"></a></li>
+                <li class="list-group-item ps-lg-0"><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                <li class="list-group-item"><a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a></li>
+                <li class="list-group-item"><a href="https://twitter.com/i/flow/login" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                <li class="list-group-item"><a href="https://www.tiktok.com/login" target="_blank"><i class="bi bi-tiktok"></i></a></li>
+                <li class="list-group-item"><a href="" data-bs-toggle="modal" data-bs-target="#sharegenecode"><i class="bi bi-qr-code-scan"></i></a></li>
               </ul>
               <div class="brand-info align-items-center d-none d-md-block d-lg-flex">
-                <div class="brand mb-md-4 mb-lg-0"><a href="home.html"><img width="180" src="/assets/images/home/yougenity-logo-white.png" /></a></div>
+                <div class="brand mb-md-4 mb-lg-0"><a href="home.html"><img width="180" src="assets/images/home/yougenity-logo-white.png" /></a></div>
                 <span class="d-none d-lg-block">|</span>
                 <div class="login"> <a href="login.html">Logout</a> </div>
               </div>
@@ -96,7 +96,9 @@
                       <div class="file-block">
                         <div class="file-info"><span class="file-name"> </span> | <span class="file-size">  </span> </div>
                         <span class="material-icons remove-file-icon"><span class="d-none d-sm-inline-block" >Remove</span> <i class="bi bi-trash-fill"></i></span>
+                        <div class="progress-bar"> </div>
                       </div>
+                      <button type="button" class="upload-button"></button>
                     </div>
                   </form>
               </div>
@@ -181,7 +183,7 @@
             </div>
           </div>
           <div class="brand-info-bottom align-items-center d-flex d-sm-none justify-content-center">
-            <div class="brand mb-md-4 mb-lg-0">Yougenity</div>
+            <div class="brand mb-md-4 mb-lg-0"><a href="home.html"><img width="130" src="assets/images/home/yougenity-logo-white.png" /></a></div>
             <span class="d-block px-3">|</span>
             <div class="login"> <a href="login.html">Logout</a> </div>
           </div>
@@ -390,5 +392,47 @@
       </div>
     </div>
 
+<!-- Chat bot -->
+
+<div class="chat-boxoutter">
+  <div id="chat-box">
+    <div class="chat-box-header">
+      <span>Genibot</span>
+      <a class="cancel-chat"><i class="bi bi-x-lg"></i></a>
+    </div>
+    <div class="chat-box-body">
+      <div class="chat-box-overlay">   
+      </div>
+      <div class="chat-logs">
+        <div class="bot messages">
+          <div class="message">
+            Welcome to YOUGENITY
+          </div>
+          <div class="message last">
+            Hi,How may I help you?
+          </div>
+        </div>
+        <div class="user messages">
+          <div class="message last">
+            I need help with something
+           </div>
+        </div>
+      </div><!--chat-log -->
+    </div>
+    <div class="chat-input">      
+      <form>
+        <input type="text" id="chat-input" placeholder="Type your query here..."/>
+      </form>      
+    </div>
+  </div>
+<a class="chat_on">
+  <img src="assets/images/home/bot-icon.png" alt="">
+</a>
+</div>
+
+
+
+  <!-- Main JS File -->
+  <script src="assets/dist/js/main.js"></script>
   </body>
 </html>

@@ -1,7 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2378.414" height="2378.414" viewBox="0 0 2378.414 2378.414">
-  <g id="Group_213" data-name="Group 213" transform="translate(-811.873 800.741) rotate(-4)">
-    <circle id="Ellipse_14" data-name="Ellipse 14" cx="1114.199" cy="1114.199" r="1114.199" transform="translate(854.909 -587.091)" fill="#2a2d74"/>
-    <path id="Path_1528" data-name="Path 1528" d="M950.133,0c524.744,0,950.133,425.389,950.133,950.133s-425.389,950.133-950.133,950.133S0,1474.877,0,950.133,425.389,0,950.133,0Z" transform="translate(969.558 -258.959)" fill="#494c9b"/>
-    <circle id="Ellipse_16" data-name="Ellipse 16" cx="787.385" cy="787.385" r="787.385" transform="translate(1142.189 66.537)" fill="#2a2d74"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1050.4 1029.5" style="enable-background:new 0 0 1050.4 1029.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#2A2D74;}
+	.st1{fill:#494C9B;}
+</style>
+<g id="Group_213" transform="translate(-811.873 800.741) rotate(-4)">
+	<circle id="Ellipse_14" class="st0" cx="1349.6" cy="-190.3" r="503.5"/>
+	<path id="Path_1528" class="st1" d="M1327.3-545.5c237.1,0,429.3,192.2,429.3,429.3s-192.2,429.3-429.3,429.3
+		c-237.1,0-429.3-192.2-429.3-429.3S1090.2-545.5,1327.3-545.5z"/>
+	<circle id="Ellipse_16" class="st0" cx="1331.8" cy="-42.7" r="355.8"/>
+</g>
 </svg>

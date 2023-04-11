@@ -102,5 +102,17 @@
         mirror: false
       });
     });
+
+
+
+    /**
+     * Chat bot
+     */
+    on('click', '.chat_on', function(e) {
+      select('#chat-box').classList.toggle('active');
+    })
+    on('click','.cancel-chat', function(e) {
+      select('#chat-box').classList.toggle('active');
+    })
   
   })()
