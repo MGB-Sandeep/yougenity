@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title -->
     <title>Yougenity</title>
-
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/home/favicon.png">
     <!-- Bootstrap CSS -->
     <link href="assets/dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -30,7 +31,7 @@
               <div class="row align-items-center">
                 <div class="profile-image mb-md-4 col-5 col-sm-6 col-md-12 ">
                   <div class="outter-wrapper">
-                    <img src="assets/images/sidebar/Issac.png" alt="profile">
+                    <img src="assets/images/sample/test.jpeg" alt="profile">
                   </div>
                 </div>
                 <div class="col-7 col-sm-6 col-md-12 ps-0 px-md-3">
@@ -53,7 +54,7 @@
                 <li class="list-group-item"><a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a></li>
                 <li class="list-group-item"><a href="https://twitter.com/i/flow/login" target="_blank"><i class="bi bi-twitter"></i></a></li>
                 <li class="list-group-item"><a href="https://www.tiktok.com/login" target="_blank"><i class="bi bi-tiktok"></i></a></li>
-                <li class="list-group-item"><a href="" data-bs-toggle="modal" data-bs-target="#sharegenecode"><i class="bi bi-qr-code-scan"></i></a></li>
+                <li class="list-group-item"><a href="" data-bs-toggle="modal" data-bs-target="#sharegenecode1"><i class="bi bi-qr-code-scan"></i></a></li>
               </ul>
               <div class="brand-info align-items-center d-none d-md-block d-lg-flex">
                 <div class="brand mb-md-4 mb-lg-0"><a href="home.html"><img width="180" src="assets/images/home/yougenity-logo-white.png" /></a></div>
@@ -65,10 +66,26 @@
         <div id="main-content" class="col-md-8 ms-sm-auto ">
           <div class="outter-wrap">
             <div class="bio mb-md-4 mb-3">
-              <h2 class="main-heading ps-4 pb-md-2"><img src="assets/images/main-content/icons/bio.svg" alt=""><span>Bio</span></h2>
+              <h2 class="main-heading ps-4 pb-md-2"><img src="assets/images/main-content/icons/intro.svg" alt=""><span>Introduction</span></h2>
               <div class="card">
                 <div class="card-body">
-                  <p class="card-text">I am interested in utilizing information from genome and applying computational skills to create novel discoveries that will leverage the next technological revolution. I did undergraduate education at the University of California, Irvine in Biology, and currently undergoing a master's program at the computer science at Incheon National University.</p>
+                  <p class="card-text">I am interested in utilizing information from genome and applying computational skills to create novel discoveries that will leverage the next technological revolution.
+                    I did undergraduate education at the University of California, Irvine in Biology, and currently undergoing a master's program at the computer science at Incheon National University.
+                    Silchester International Investors LLP, a British activist fund, has made waves in the Korean market by acquiring more than 5 percent of LG Corp. shares, a unit of one of South Korea’s largest and most diversified conglomerates.
+
+                    The investment firm had been steadily buying LG Corp.’s stock over an extended period, but only recently exceeded the 5 percent threshold which triggered its disclosure obligation under the country’s law. Upon the news, LG Corp. shares jumped 9.48 percent to close at 93,500 won ($71.2) on Wednesday.
+
+                    Silchester is also known to have stakes in KT Corp. and Korea Electric Power Corp. Regarding KT, where it holds a stake of more than 5 percent, the investment firm once publicly stated that it will make proposals to management to increase shareholder value.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bio mb-md-4 mb-3">
+              <div class="box-head d-flex align-items-center justify-content-between px-4 pb-md-2">
+                <h2 class="main-heading "><img src="assets/images/main-content/icons/picture.svg" alt=""><span>Virtual DNA Art</span></h2>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text"><img class="w-100" src="assets/images/sample/edgc_default_sample_genomedata_20180328.jpg"></p>
                 </div>
               </div>
             </div>
@@ -132,7 +149,7 @@
           </div>
           <div class="brand-info-bottom align-items-center d-flex d-sm-none justify-content-center">
             <div class="brand mb-md-4 mb-lg-0"><a href="home.html"><img width="130" src="assets/images/home/yougenity-logo-white.png" /></a></div>
-            <span class="d-block px-3">|</span>
+            <span class="d-none px-3">|</span>
             <div class="login"> <a href="login.html">Login</a>  / <a href="signup.html">Sign Up</a> </div>
           </div>
         </div>
@@ -187,14 +204,14 @@
   
 <!-- qr code -->
 <div class="modal fade" id="sharegenecode1" tabindex="-1" aria-labelledby="sharegenecode1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-centered ">
     <div class="modal-content">
       <a  class="cancel" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></a>
       <div class="qrcode">
-        <img src="assets/images/sidebar/icons/qr-code.svg" alt="qrcode">
+        <img width="128" src="assets/images/sample/edgc_default_sample_genomedata_20180328_qr.png" alt="qrcode">
         <div class="link pt-5">
-          <input type="text" value="www.Yougenity.com/profile-123" id="myInput">
-          <button><i class="bi bi-stickies-fill"></i></button>
+          <p class="genicode-full" id="myInput">https://www.yougenity.com/hs/333131331311331223313323.po</p>
+          <button>Copy genicode<i class="bi bi-stickies-fill"></i></button>
         </div>
       </div>
     </div>

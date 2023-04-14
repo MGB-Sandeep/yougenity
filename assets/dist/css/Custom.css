@@ -14,6 +14,7 @@ body {
 a{
     color:#2A2D74;
     font-weight: 600;
+    text-decoration: none;
 }
 .btn-primary:hover {
     color: #fff;
@@ -92,7 +93,9 @@ button.edit-btn {
 .profile-image img {
     background-color: #fff;
     display: inline-block;
-    border-radius: 100%;
+    object-fit: cover;
+    width: 222px;
+    height: 222px;
 }
 .profile-name {
     font-size: 44px;
@@ -123,9 +126,14 @@ button.edit-btn {
 .genicode {
     font-size: 23px;
 }
-.outter-wrapper{
+.outter-wrapper {
     position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    width: 222px;
+    height: 222px;
+    overflow: hidden;
+    border-radius: 100%;
 }
 
 
@@ -181,7 +189,7 @@ button.edit-btn {
     margin-right: 50px;
 }
 .reports .image img {
-    min-width: 152px;
+    width: 152px;
     overflow: hidden;
     border-radius: 30px;
     background-color: #fff;
@@ -229,10 +237,11 @@ button.edit-btn {
     background: #f5f5f5;
 }
 .drag-file-area {
-	border-radius: 40px;
+    border-radius: 40px;
     margin: 10px 0 0;
     padding: 15px 50px;
     text-align: center;
+    position: relative;
 }
 .drag-file-area .upload-icon {
 	font-size: 50px;
@@ -254,8 +263,9 @@ button.edit-btn {
     position: absolute;
     width: 100%;
     left: 0;
-    height: 60px;
-    top: 30px;
+    height: 100%;
+    top: 0;
+    cursor: pointer;
 }
 i.bi.bi-file-earmark-arrow-up-fill {
     font-size: 30px;
@@ -298,10 +308,18 @@ i.bi.bi-file-earmark-arrow-up-fill {
     cursor: pointer;
     width: 100%;
 }
+.file-name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 88%;
+}
 .file-info {
-	display: flex;
-	align-items: center;
-	font-size: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    width: 90%;
 }
 .file-icon {
 	margin-right: 10px;
@@ -463,17 +481,31 @@ textarea.form-control {
     padding: 10px;
     border: none;
     background: #2A2D74;
-    margin-left: 0;
-    position: absolute;
-    right: 21px;
-    height: 47px;
+    margin-top: 10px;
+    color: #fff;
 }
 input#myInput {
     padding: 10px;
     width: 100%;
+    text-align: center;
 }
 .link button i{
     color:#fff;
+    padding-left: 10px;
+}
+p.card-text {
+    white-space: pre-line;
+    text-align: justify;
+}
+#sharegenecode1 .modal-dialog {
+    max-width: 660px !important;
+}
+.genicode-full {
+    display: block;
+    word-wrap: break-word;
+    padding: 10px;
+    border: 1px solid #cacaca;
+    text-align: left;
 }
 
 
@@ -634,7 +666,10 @@ input#myInput {
     background-color: #effbf2;
     position: relative;
   }
-  
+  .chat-boxoutter {
+    z-index: 99999;
+    position: relative;
+}
   .bot .message.last:before {
     content: "";
     position: absolute;

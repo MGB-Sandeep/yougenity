@@ -8,8 +8,9 @@
 }
 }
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
-    .profile-image img {
+    .outter-wrapper, .profile-image img{
         width: 170px;
+        height: 170px;
     }
     .profile-name {
         font-size: 30px;
@@ -103,8 +104,9 @@
     #sidebar .outter-wrap {
         padding: 15px 12px;
     }
-    .profile-image img {
-        width: 100%;
+    .outter-wrapper, .profile-image img{
+        width: 222px;
+        height: 222px;
     }
     .profile-name {
         font-size: 20px;
@@ -150,7 +152,7 @@
         padding: 15px 0;
     }
     .reports p {
-        margin-right: 0;
+        margin-right: 20px;
         font-size: 13px;
     }
     .reports .image img {
@@ -252,6 +254,16 @@
     #sidebar {
         overflow-x: scroll;
     }
+    .file-name {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        width: 250px;
+    }
+    .file-info {
+        width: unset;
+    }
 
 }
 @media screen and (max-width: 768px) {
@@ -265,6 +277,10 @@
     }
     .form-check-input {
         width: 1.6em;
+    }
+    .chat_on {
+        bottom: 20px;
+        right: 15px;
     }
     #login .outter-wrap {
         padding: 1rem 2rem;
@@ -321,18 +337,30 @@
     padding: 46px 20px;
 }
 .file-info {
-    padding-bottom: 12px;
+    padding-bottom: 0;
+    display: flex;
+    font-size: 13px;
+}
+.file-name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     display: inline-block;
+    width: 400px;
+}
+.remove-file-icon {
+    font-size: 13px;
 }
 .brand-info-bottom {
     background: #2a2d74;
     margin: 0 -12px;
     color: #fff;
-    padding: 10px 0 30px;
+    padding: 10px 0 ;
 }
 .brand-info-bottom .brand {
     font-size: 20px;
     font-weight: bold;
+    margin-top: 15px;
 }
 .brand-info-bottom .login {
     font-size: 15px;
@@ -345,11 +373,16 @@
 #sidebar{
     position: unset;
 }
-.brand-info-bottom{
+.brand-info-bottom {
     display: flex !important;
+    text-align: center;
+    flex-direction: column-reverse;
 }
 .brand img {
     width: 230px;
+}
+.brand-info-bottom .brand img {
+    width: 150px;
 }
 #login #main-content {
     top: 0px;
@@ -359,6 +392,10 @@
   }
 }
 @media screen and (max-width: 567px) {
+.outter-wrapper, .profile-image img{
+    width: 139px;
+    height: 139px;
+}
 .profile-exp p {
     font-size: 12px;
 }
@@ -384,17 +421,27 @@
     background: #fff;
     position: fixed;
     right: 10px;
-    bottom: 91px;
+    bottom: 126px;
     width: 100%;
     max-width: 94%;
     max-height: 100vh;
     border-radius: 5px;
     border: 1px solid #0ec232;
   }
+  .file-name {
+    max-width: 240px;
+}
 }
 @media screen and (max-width: 413px) {
     .profile-exp p {
         font-size: 10px;
+    }
+    .file-name {
+        max-width: 200px;
+    }
+    .outter-wrapper, .profile-image img{
+        width: 122px;
+        height: 122px;
     }
 }
 @media screen and (max-width: 374px) {
@@ -416,9 +463,19 @@
 #main-content {
     top: 240px;
 }
+.file-name {
+    max-width: 190px;
+}
 }
 @media screen and (max-width: 359px) {
     #main-content {
         top: 215px;
+    }
+    .file-name {
+        max-width: 157px;
+    }
+    .outter-wrapper, .profile-image img{
+        width: 106px;
+        height: 106px;
     }
 }
