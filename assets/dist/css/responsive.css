@@ -1,13 +1,32 @@
 /***** profile tabs ******/
 @media screen and (min-width: 1025px) and (max-width: 1700px) {
-.outter-wrap {
-    padding: 3.5rem 2rem;
-}
 .card-body {
     padding: 1rem 0rem;
 }
 }
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) and (max-width: 1500px) {
+    .brand-info {
+        display: block !important;
+    }
+    .brand-info span{
+        opacity:0;
+    }
+    .reports .image img {
+        width: 130px;
+        border-radius: 24px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .reports .image img {
+        width: 114px;
+        border-radius: 20px;
+    }
+    img.approve {
+        width: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
     .outter-wrapper, .profile-image img{
         width: 170px;
         height: 170px;
@@ -31,12 +50,66 @@
         font-size: 22px;
     }
     .outter-wrap {
-        padding: 3.5rem 4rem;
+        padding: 3.5rem 3rem;
     }
     #login .outter-wrap {
         padding: 3.5rem 12rem !important;
     }
 }
+@media screen and (max-width: 1369px) {
+    .outter-wrap {
+        padding: 3.5rem 3rem;
+    }
+    .social-icon li {
+        padding: 0 13px;
+    }
+}
+@media screen and (max-width: 1274px) {
+    .outter-wrap {
+        padding: 3.5rem 2rem;
+    }
+    .reports .image img {
+        width: 96px;
+        border-radius: 16px;
+    }
+    img.approve {
+        width: 16px;
+    }
+}
+@media screen and (max-width: 1060px) {
+    .outter-wrap {
+        padding: 3.5rem 1rem;
+    }
+    .reports p {
+        font-size: 12px;
+    }
+    .reports h5.card-title {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1199px) {
+    .profile-name {
+        font-size: 26px;
+    }
+    .profile-exp p {
+        font-size: 13px;
+    }
+    .profile-exp img {
+        width: 20px;
+    }
+    .genicode {
+        font-size: 16px;
+    }
+    .social-icon li i {
+        font-size: 19px;
+    }
+    .social-icon li svg {
+        width: 25px;
+        position: relative;
+        bottom: 4px;
+    }
+}
+
 @media screen and (max-width: 1024px) and (min-width: 768px) {
     .outter-wrap {
         padding: 30px 5px;
@@ -88,11 +161,42 @@
     width: 150px;
 }
 }
+@media screen and (max-width: 1024px) and (min-width: 991px) {
+    .genicode {
+        font-size: 17px;
+    }
+    .profile-exp p {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 990px) and (min-width: 768px) {
+    .profile-name {
+        font-size: 20px;
+    }
+    .genicode {
+        font-size: 13px;
+    }
+    .social-icon li i {
+        font-size: 15px;
+    }
+    .profile-exp p {
+        font-size: 14px;
+        margin-right: 0 !important;
+    }
+    .social-icon li svg {
+        width: 22px;
+        position: relative;
+        bottom: 4px;
+    }
+}
 /***** profile mobile ******/
 @media screen and (max-width: 767px) {
     /***** sidebar ******/
     .outter-wrap {
         padding: 20px 0;
+    }
+    img.approve {
+        width: 14px;
     }
     .profile-image .approve {
         width: 25px;
@@ -390,6 +494,10 @@
 .chat_on img {
     width: 60px;
   }
+  #info-icon {
+    font-size: 14px;
+    bottom: 9px;
+}
 }
 @media screen and (max-width: 567px) {
 .outter-wrapper, .profile-image img{
@@ -474,8 +582,19 @@
     .file-name {
         max-width: 157px;
     }
+    .profile-name {
+        font-size: 18px;
+    }
     .outter-wrapper, .profile-image img{
         width: 106px;
         height: 106px;
+    }
+    .social-icon li i {
+        font-size: 20px;
+    }
+    .social-icon li svg {
+        width: 26px;
+        position: relative;
+        bottom: 3px;
     }
 }

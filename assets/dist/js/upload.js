@@ -20,17 +20,17 @@ var isAdvancedUpload = function() {
   
   fileInput.addEventListener("click", () => {
 	  fileInput.value = '';
-	  console.log(fileInput.value);
+	//   console.log(fileInput.value);
   });
   
   fileInput.addEventListener("input", e => {
-	  console.log(" > " + fileInput.value)
+	//   console.log(" > " + fileInput.value)
 	  dragDropText.innerHTML = 'File Dropped Successfully!';
 	  uploadButton.innerHTML = `<span>Upload</span>`;
 	  fileName.innerHTML = fileInput.files[0].name;
 	  fileSize.innerHTML = (fileInput.files[0].size/1024).toFixed(1) + " KB";
 	  uploadedFile.style.cssText = "display: flex;";
-	  progressBar.style.width = 0;
+	  progressBar.style.cssText = "display: none;";
 	  fileFlag = 0;
   });
   
@@ -39,15 +39,33 @@ var isAdvancedUpload = function() {
 	  if(isFileUploaded != '') {
 		  if (fileFlag == 0) {
 			  fileFlag = 1;
-			  var width = 0;
-			  var id = setInterval(frame, 50);
+			//   var width = 0;
+			  
+				progressBar.style.cssText = "display: flex;";
+			  var id = setInterval(frame, 100);
 			  function frame() {
-					if (width >= 940) {
+				var forEach = function (array, callback, scope) {
+					for (var i = 0; i < array.length; i++) {
+					  callback.call(scope, i, array[i]);
+					}
+				  };
+
+					var max = -219.99078369140625;
+					forEach(document.querySelectorAll('.progress'), function (index, value) {
+					percent = value.getAttribute('data-progress');
+					  value.querySelector('.fill').setAttribute('style', 'stroke-dashoffset: ' + ((100 - percent) / 100) * max);
+					});
+
+					if (percent >= 100) {
 					  clearInterval(id);
 					  uploadButton.innerHTML = `<span>Uploaded</span>`;
+					  dragDropText.innerHTML = 'File Uploaded Successfully!';
+					  progressBar.style.cssText = "display: none;";
 					} else {
-					  width += 5;
-					  progressBar.style.width = width + "px";
+						forEach(document.querySelectorAll('.progress'), function (index, value) {
+							percent = value.getAttribute('data-progress');
+							  value.querySelector('.fill').setAttribute('style', 'stroke-dashoffset: ' + ((50 - percent) / 100) * max);
+							});
 					}
 			  }
 			}
@@ -78,13 +96,13 @@ var isAdvancedUpload = function() {
   
 	  draggableFileArea.addEventListener("drop", e => {
 		  dragDropText.innerHTML = 'File Dropped Successfully!';
-		  document.querySelector(".label").innerHTML = `drag & drop or <span class="browse-files"> <input type="file" class="default-file-input" style=""/> <span class="browse-files-text" style="top: -23px; left: -20px;"> browse file</span> </span>`;
+		//   document.querySelector(".label").innerHTML = `drag & drop or <span class="browse-files"> <input type="file" class="default-file-input" style=""/> <span class="browse-files-text" style="top: -23px; left: -20px;"> browse file</span> </span>`;
 		  uploadButton.innerHTML = `<span>Upload</span>`;
 		  
 		  let files = e.dataTransfer.files;
 		  fileInput.files = files;
-		  console.log(files[0].name + " " + files[0].size);
-		  console.log(document.querySelector(".default-file-input").value);
+		//   console.log(files[0].name + " " + files[0].size);
+		//   console.log(document.querySelector(".default-file-input").value);
 		  fileName.innerHTML = files[0].name;
 		  fileSize.innerHTML = (files[0].size/1024).toFixed(1) + " KB";
 		  uploadedFile.style.cssText = "display: flex;";
@@ -98,7 +116,18 @@ var isAdvancedUpload = function() {
 	fileSize.innerHTML = '';
 	uploadedFile.style.cssText = "display: none;";
 	fileInput.value = '';
-	dragDropText.innerHTML = 'Drag & drop any file here';
+	// dragDropText.innerHTML = 'Drag & drop any file here';
 	uploadButton.innerHTML = ``;
-	console.log(" remove " + fileInput.value)
+	// console.log(" remove " + fileInput.value)
+	var forEach = function (array, callback, scope) {
+		for (var i = 0; i < array.length; i++) {
+		  callback.call(scope, i, array[i]);
+		}
+	  };
+	  
+		var max = -219.99078369140625;
+		forEach(document.querySelectorAll('.progress'), function (index, value) {
+		percent = value.getAttribute('data-progress');
+		  value.querySelector('.fill').setAttribute('style', 'stroke-dashoffset: ' + ((100 - percent) / 0) * max);
+		});
 });
