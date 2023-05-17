@@ -51,9 +51,8 @@
               <div class="genicode mt-3 mb-1 mt-md-5"><span>HS,1,23331123133313113232333,1</span></div>
               <ul class="social-icon list-group-horizontal list-group mt-lg-3 justify-content-evenly justify-content-md-start flex-wrap">
                 <li class="list-group-item ps-lg-0"><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
-                <li class="list-group-item"><a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a></li>
                 <li class="list-group-item"><a href="https://twitter.com/i/flow/login" target="_blank"><i class="bi bi-twitter"></i></a></li>
-                <li class="list-group-item"><a href="https://www.tiktok.com/login" target="_blank"><i class="bi bi-tiktok"></i></a></li>
+                <li class="list-group-item"><a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
                 <li class="list-group-item">
                   <a href="#" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="34" viewBox="0 0 40 34">
@@ -162,7 +161,7 @@
                           <h5 class="card-title">My Ancestry</h5>
                           <p class="card-text">Ancestry DNA Suggests that I am 99.8% Korean</p>
                         </div>
-                        <div class="image"><img src="assets/images/main-content/report/ancestry.jpg" alt="ancestry"></div>
+                        <div class="image"><img src="assets/images/main-content/report/ancestry.png" alt="ancestry"></div>
                       </div>
                     </div>
                   </a>
@@ -175,7 +174,7 @@
                           <h5 class="card-title">My Aptitude</h5>
                           <p class="card-text">Test by nature of DNA suggests that I am "Realistic and Investigative"</p>
                         </div>
-                        <div class="image"><img src="assets/images/main-content/report/aptitude.jpg" alt="ancestry"></div>
+                        <div class="image"><img src="assets/images/main-content/report/aptitude.png" alt="ancestry"></div>
                       </div>
                     </div>
                   </a>
@@ -188,7 +187,7 @@
                           <h5 class="card-title">My Wine</h5>
                           <p class="card-text">My DNA suggests that I prefer more sweet and less acidic wine</p>
                         </div>
-                        <div class="image"><img src="assets/images/main-content/report/Wine.jpg" alt="ancestry"></div>
+                        <div class="image"><img src="assets/images/main-content/report/Wine.png" alt="ancestry"></div>
                       </div>
                     </div>
                   </a>
@@ -201,7 +200,7 @@
                           <h5 class="card-title">My Personality</h5>
                           <p class="card-text">DNA suggests that I am balanced and realistic personality</p>
                         </div>
-                        <div class="image"><img src="assets/images/main-content/report/Personality.jpg" alt="ancestry"></div>
+                        <div class="image"><img src="assets/images/main-content/report/Personality.png" class="personality" alt="personality"></div>
                       </div>
                     </div>
                   </a>
@@ -264,6 +263,17 @@
       <a  class="cancel" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></a>
       <div class="modal-body">
         <form class="row">
+          <div class="col-md-12 mb-3">
+            <div class="vcard">
+              <label for="pf_vcard_flag" class="form-label">Do you want to share V-Card information?</label>
+              <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" id="pf_vcard_flag" style="cursor: pointer;">
+              </div>
+              <div class="d-inline-block pt-2">
+                <p class="hint">When V-Card is turned on, all information except Gender will be displayed. When turned off, the display will be limited to Name, Job, Company, Twitter URL, Instagram URL, and LinkedIn URL.</p>
+              </div>
+            </div>
+          </div>
           <div class="user-image pb-4">
             <a href="#"><img src="assets/images/sidebar/icons/dummy.jpg" alt="User image"><i class="bi bi-plus"></i></a>
           </div>
@@ -292,12 +302,8 @@
               <input type="text" class="form-control" id="instagram">
             </div>
             <div class="col-md-6 mb-3">
-              <label class="form-label">Youtube URL</label>
+              <label class="form-label">Linkedin URL</label>
               <input type="text" class="form-control" id="Twitter">
-            </div>
-            <div class="col-md-6 mb-3">
-              <label  class="form-label">Ticktok URL</label>
-              <input type="text" class="form-control" id="ticktok">
             </div>
             <div class="col-md-6 mb-3">
               <label class="form-label">Company Website</label>
@@ -307,7 +313,9 @@
               <label  class="form-label">Homepage</label>
               <input type="text" class="form-control" id="ticktok">
             </div>
+
           </div>
+            
         </div>
       </div>
       <div class="modal-footer justify-content-start">

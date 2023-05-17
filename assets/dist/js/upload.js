@@ -52,11 +52,12 @@ var isAdvancedUpload = function() {
 
 					var max = -219.99078369140625;
 					forEach(document.querySelectorAll('.progress'), function (index, value) {
-					percent = value.getAttribute('data-progress');
-					  value.querySelector('.fill').setAttribute('style', 'stroke-dashoffset: ' + ((100 - percent) / 100) * max);
+						percent = value.getAttribute('data-progress');
+					  	value.querySelector('.fill').setAttribute('style', 'stroke-dashoffset: ' + ((100 - percent) / 100) * max);
+						flagvalue = 100;
 					});
 
-					if (percent >= 100) {
+					if (flagvalue >= 100) {
 					  clearInterval(id);
 					  uploadButton.innerHTML = `<span>Uploaded</span>`;
 					  dragDropText.innerHTML = 'File Uploaded Successfully!';

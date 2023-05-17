@@ -56,6 +56,14 @@
         padding: 3.5rem 12rem !important;
     }
 }
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+    .box4 .pr-image {
+        flex-direction: column;
+    }
+    .outter-box {
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 1369px) {
     .outter-wrap {
         padding: 3.5rem 3rem;
@@ -261,9 +269,14 @@
     }
     .reports .image img {
         border-radius: 17px;
-        background-color: #fff;
+        /* background-color: #fff; */
         width: 124px;
         min-width: unset;
+    }
+    .reports .image img.personality {
+        width: 70px;
+        overflow: hidden;
+        border-radius: 30px;
     }
     .modal-body {
     padding: 3rem 1rem 2rem;

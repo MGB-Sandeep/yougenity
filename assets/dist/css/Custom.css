@@ -170,6 +170,10 @@ img.approve {
     padding: 30px;
     font-size: 18px;
     color: #000;
+    text-align: justify;
+    text-align-last: left;
+-moz-text-align-last: left;
+word-break: break-all;
 }
 
 /*** report ***/
@@ -196,7 +200,13 @@ img.approve {
     width: 152px;
     overflow: hidden;
     border-radius: 30px;
-    background-color: #fff;
+    /* background-color: #fff; */
+}
+.reports .image img.personality {
+    width: auto;
+    overflow: hidden;
+    border-radius: 30px;
+   
 }
 #info-icon {
     font-size: 18px;
@@ -500,7 +510,6 @@ input#myInput {
 }
 p.card-text {
     white-space: pre-line;
-    word-break: break-word;
 }
 #sharegenecode1 .modal-dialog {
     max-width: 660px !important;
@@ -660,6 +669,8 @@ p.card-text {
     margin-bottom: 5px;
     display: inline-block;
     font-size: 12px;
+    text-align: left;
+    word-break: keep-all;
   }
   
   .bot {
@@ -791,4 +802,30 @@ p.card-text {
     font-size: 12px;
     fill: #fff;
     text-anchor: middle;
+}
+.social-icon svg:hover g {
+    stroke: #0EC232;
+}
+.social-icon svg:hover path, .social-icon svg:hover #Rectangle_570, .social-icon svg:hover #Rectangle_571, .social-icon svg:hover #Rectangle_572, #Rectangle_574 {
+    fill: #0EC232;
+}
+
+.vcard .form-switch .form-check-input {
+    width: 4em;
+    height: 2rem;
+}
+
+.form-check-input:checked {
+    background-color: #0EC232;
+    border-color: snow;
+}
+.form-check-input:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(13,110,253,.25) !important;
+}
+
+.hint {
+    font-size: 14px;
+    color: #ff3c3c;
 }
