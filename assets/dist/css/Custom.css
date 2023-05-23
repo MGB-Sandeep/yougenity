@@ -202,12 +202,6 @@ word-break: break-all;
     border-radius: 30px;
     /* background-color: #fff; */
 }
-.reports .image img.personality {
-    width: auto;
-    overflow: hidden;
-    border-radius: 30px;
-   
-}
 #info-icon {
     font-size: 18px;
     position: relative;

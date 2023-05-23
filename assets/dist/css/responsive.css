@@ -273,11 +273,7 @@
         width: 124px;
         min-width: unset;
     }
-    .reports .image img.personality {
-        width: 70px;
-        overflow: hidden;
-        border-radius: 30px;
-    }
+
     .modal-body {
     padding: 3rem 1rem 2rem;
     }
